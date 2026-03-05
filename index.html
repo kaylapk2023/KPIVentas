@@ -67,7 +67,7 @@ margin-bottom:20px;
 }
 
 li{
-margin-bottom:8px;
+margin-bottom:10px;
 }
 
 .imagen-reporte{
@@ -84,7 +84,7 @@ font-weight:bold;
 color:#0056b3;
 }
 
-/* TARJETAS */
+/* TARJETAS DE PREGUNTAS */
 
 .tarjeta-pregunta{
 background:#ffffff;
@@ -93,25 +93,6 @@ padding:20px;
 margin-top:30px;
 border-radius:8px;
 box-shadow:0 3px 10px rgba(0,0,0,0.08);
-}
-
-/* INDICE */
-
-.indice{
-background:#eef4fb;
-padding:20px;
-border-radius:8px;
-margin-bottom:30px;
-}
-
-.indice a{
-text-decoration:none;
-color:#0056b3;
-font-weight:bold;
-}
-
-.indice li{
-margin-bottom:6px;
 }
 
 </style>
@@ -127,15 +108,21 @@ margin-bottom:6px;
 <h2>Descripción General</h2>
 
 <p>
-Los reportes desarrollados en Power BI representan la capa de presentación del análisis del Indicador Mensual de Ticket Promedio de Ventas Totales por Canales Digitales (Página Web y Aplicación Móvil) para Falabella Perú.
+Los reportes desarrollados en Power BI representan la capa de presentación del análisis del
+Indicador Mensual de Ticket Promedio de Ventas Totales por Canales Digitales
+(Página Web y Aplicación Móvil) para Falabella Perú.
 </p>
 
 <p>
-Para fines académicos, la información utilizada corresponde a un caso ficticio construido a partir de datos simulados generados mediante herramientas de inteligencia artificial, con el objetivo de replicar un escenario realista de análisis de ventas digitales.
+Para fines académicos, la información utilizada corresponde a un caso ficticio,
+construido a partir de datos simulados generados mediante herramientas de
+inteligencia artificial con el objetivo de replicar un escenario realista de
+análisis de ventas digitales.
 </p>
 
 <p>
-Los reportes fueron diseñados con un enfoque ejecutivo, priorizando una interfaz intuitiva que facilite la exploración de la información y el análisis del indicador.
+Los reportes fueron diseñados con un enfoque ejecutivo, priorizando una interfaz
+intuitiva que facilite la exploración de la información y el análisis del indicador.
 </p>
 
 
@@ -143,19 +130,42 @@ Los reportes fueron diseñados con un enfoque ejecutivo, priorizando una interfa
 
 <ul>
 
-<li><span class="highlight">Storytelling con datos:</span> cada reporte sigue una secuencia lógica que facilita la comprensión del comportamiento del indicador.</li>
+<li>
+<span class="highlight">Storytelling con datos:</span>
+cada reporte sigue una secuencia lógica que facilita la comprensión del
+comportamiento del indicador.
+</li>
 
-<li><span class="highlight">Análisis descriptivo:</span> se incluyen indicadores como ticket promedio mensual, monto total de ventas y número de transacciones.</li>
+<li>
+<span class="highlight">Análisis descriptivo:</span>
+los reportes incluyen indicadores como ticket promedio mensual,
+monto total de ventas y número de transacciones.
+</li>
 
-<li><span class="highlight">Filtros dinámicos:</span> los usuarios pueden explorar la información aplicando filtros por fecha y canal digital.</li>
+<li>
+<span class="highlight">Filtros dinámicos:</span>
+los usuarios pueden explorar la información aplicando filtros por fecha
+y canal digital (Página Web y Aplicación Móvil).
+</li>
 
 </ul>
+
+
+<h2>Impacto</h2>
+
+<p>
+Esta capa permite visualizar de manera clara el desempeño del ticket promedio de
+ventas digitales, facilitando la identificación de oportunidades para mejorar
+el valor promedio por transacción y apoyar la toma de decisiones basada en datos.
+</p>
 
 
 <h2>Modelo de datos</h2>
 
 <p>
-El modelo de datos fue construido en Power BI a partir de las tablas publicadas desde Microsoft Fabric, utilizando una estructura en estrella que optimiza el análisis de información.
+El modelo de datos fue construido en Power BI a partir de las tablas publicadas
+desde el entorno de Microsoft Fabric. La estructura responde a un esquema en
+estrella que permite eficiencia en los análisis.
 </p>
 
 <img src="Modelodatos.png" class="imagen-reporte">
@@ -165,6 +175,13 @@ El modelo de datos fue construido en Power BI a partir de las tablas publicadas 
 
 
 <h2>Interfaz general de Power BI</h2>
+
+<p>
+Con el modelo de datos estructurado, se desarrolla el reporte dentro de Power BI.
+La interfaz se organiza en secciones que presentan el contexto del negocio
+y las preguntas analíticas que guían la exploración de la información.
+</p>
+
 
 <h3>Inicio</h3>
 <img src="Inicio.png" class="imagen-reporte">
@@ -185,29 +202,7 @@ El modelo de datos fue construido en Power BI a partir de las tablas publicadas 
 <h3>Exploración analítica mediante preguntas</h3>
 
 
-<div class="indice">
-
-<b>Índice de preguntas</b>
-
-<ul>
-
-<li><a href="#p1">Pregunta 1</a></li>
-<li><a href="#p2">Pregunta 2</a></li>
-<li><a href="#p3">Pregunta 3</a></li>
-<li><a href="#p4">Pregunta 4</a></li>
-<li><a href="#p5">Pregunta 5</a></li>
-<li><a href="#p6">Pregunta 6</a></li>
-<li><a href="#p7">Pregunta 7</a></li>
-<li><a href="#p8">Pregunta 8</a></li>
-<li><a href="#p9">Pregunta 9</a></li>
-<li><a href="#p10">Pregunta 10</a></li>
-
-</ul>
-
-</div>
-
-
-<div class="tarjeta-pregunta" id="p1">
+<div class="tarjeta-pregunta">
 <h4>Pregunta 1</h4>
 <h5>Pantalla de gráfico</h5>
 <img src="1.1.png" class="imagen-reporte">
@@ -218,7 +213,7 @@ El modelo de datos fue construido en Power BI a partir de las tablas publicadas 
 </div>
 
 
-<div class="tarjeta-pregunta" id="p2">
+<div class="tarjeta-pregunta">
 <h4>Pregunta 2</h4>
 <h5>Pantalla de gráfico</h5>
 <img src="2.1.png" class="imagen-reporte">
@@ -229,7 +224,7 @@ El modelo de datos fue construido en Power BI a partir de las tablas publicadas 
 </div>
 
 
-<div class="tarjeta-pregunta" id="p3">
+<div class="tarjeta-pregunta">
 <h4>Pregunta 3</h4>
 <h5>Pantalla de gráfico</h5>
 <img src="3.1.png" class="imagen-reporte">
@@ -240,7 +235,7 @@ El modelo de datos fue construido en Power BI a partir de las tablas publicadas 
 </div>
 
 
-<div class="tarjeta-pregunta" id="p4">
+<div class="tarjeta-pregunta">
 <h4>Pregunta 4</h4>
 <h5>Pantalla de gráfico</h5>
 <img src="4.1.png" class="imagen-reporte">
@@ -251,7 +246,7 @@ El modelo de datos fue construido en Power BI a partir de las tablas publicadas 
 </div>
 
 
-<div class="tarjeta-pregunta" id="p5">
+<div class="tarjeta-pregunta">
 <h4>Pregunta 5</h4>
 <h5>Pantalla de gráfico</h5>
 <img src="5.1.png" class="imagen-reporte">
@@ -262,7 +257,7 @@ El modelo de datos fue construido en Power BI a partir de las tablas publicadas 
 </div>
 
 
-<div class="tarjeta-pregunta" id="p6">
+<div class="tarjeta-pregunta">
 <h4>Pregunta 6</h4>
 <h5>Pantalla de gráfico</h5>
 <img src="6.1.png" class="imagen-reporte">
@@ -273,7 +268,7 @@ El modelo de datos fue construido en Power BI a partir de las tablas publicadas 
 </div>
 
 
-<div class="tarjeta-pregunta" id="p7">
+<div class="tarjeta-pregunta">
 <h4>Pregunta 7</h4>
 <h5>Pantalla de gráfico</h5>
 <img src="7.1.png" class="imagen-reporte">
@@ -284,7 +279,7 @@ El modelo de datos fue construido en Power BI a partir de las tablas publicadas 
 </div>
 
 
-<div class="tarjeta-pregunta" id="p8">
+<div class="tarjeta-pregunta">
 <h4>Pregunta 8</h4>
 <h5>Pantalla de gráfico</h5>
 <img src="8.1.png" class="imagen-reporte">
@@ -295,7 +290,7 @@ El modelo de datos fue construido en Power BI a partir de las tablas publicadas 
 </div>
 
 
-<div class="tarjeta-pregunta" id="p9">
+<div class="tarjeta-pregunta">
 <h4>Pregunta 9</h4>
 <h5>Pantalla de gráfico</h5>
 <img src="9.1.png" class="imagen-reporte">
@@ -306,7 +301,7 @@ El modelo de datos fue construido en Power BI a partir de las tablas publicadas 
 </div>
 
 
-<div class="tarjeta-pregunta" id="p10">
+<div class="tarjeta-pregunta">
 <h4>Pregunta 10</h4>
 <h5>Pantalla de gráfico</h5>
 <img src="10.1.png" class="imagen-reporte">
